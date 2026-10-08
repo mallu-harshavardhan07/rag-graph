@@ -1,0 +1,30 @@
+# Python / Environment
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.venv/
+ENV/
+
+# Local Databases & Vector Stores (ChromaDB / SQLite)
+chroma_db/
+data/chroma_db/
+*.db
+*.sqlite
+data/vector_store/
+
+# Large Raw Catalogs & Data Dumps (>100MB GitHub limit)
+data/cds_catalog.json
+data/discovered_views.json
+data/*.txt
+
+# Streamlit & OS Caches
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary Files
+logs/
+*.log
+scratch/
